@@ -1,0 +1,52 @@
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-wrapper {
+    height: 100%;
+    min-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .navbar-wrapper .navbar-sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbar-wrapper .navbar-sec1 .brandCombainer {
+    gap: 4vw;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-wrapper .navbar-sec1 .brandCombainer .burgerBar svg {
+    height: 2.5vh;
+  }
+
+  .navbar-wrapper .navbar-sec1 .brandCombainer .logo img {
+    height: 5.5vh;
+  }
+
+  .navbar-wrapper .navbar-sec1 .brandingText {
+    font-size: 2.5vh;
+    width: fit-content;
+    margin-bottom: 15px;
+  }
+
+  .navbar-wrapper .navbar-sec2 {
+    display: none;
+  }
+}

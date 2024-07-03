@@ -1,0 +1,122 @@
+:root {
+  /* backgroud colros */
+  --primary-bgColor: #151515;
+  --interection-bgColor: #ffffff;
+  --signal-bgColor: #ffa63d;
+  --container-bgColor: #3f7df4;
+  /* colros */
+  --primary-color: #ffffff;
+  /* font size */
+  --primary-font-size: 7.5vw;
+  --secondary-font-size: 6vw;
+  --anchor-font-size: 1.2vw;
+}
+
+@font-face {
+  font-family: plain-regular;
+  src: url(./src/assets/fonts/plain-regular-webfont.woff);
+}
+
+@font-face {
+  font-family: plain-light;
+  src: url(./src/assets/fonts/plain-light-webfont.woff);
+}
+
+@font-face {
+  font-family: silkSerif-regular;
+  src: url(./src/assets/fonts/silkserif-regularitalic-webfont.woff);
+}
+
+@font-face {
+  font-family: silkSerif-light;
+  src: url(./src/assets/fonts/silkserif-lightitalic-webfont.woff);
+}
+
+a {
+  text-decoration: none;
+}
+
+/*?>>>>>>>>>>>>>>>>> Cursor */
+#cursor {
+  pointer-events: none;
+  height: 40px;
+  width: 40px;
+  mix-blend-mode: difference;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+/*?>>>>>>>>>>>>>>>>> Cursor */
+
+/*?>>>>>>>>>>>>>>>>> loader */
+.loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  user-select: none;
+  background-color: #0b0b0b;
+  top: 0;
+  left: 0;
+  color: var(--primary-color);
+  z-index: 999;
+  overflow: hidden;
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.loader-wrapper {
+  padding: 0vh 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.loader-wrapper .line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.6vw;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.line .line1-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  margin-left: 3vw;
+}
+
+.line .line1-part1 span {
+  font-size: 3vw;
+  font-family: "silkSerif-regular", serif;
+}
+
+.line .line1-part1 .counter {
+  width: 5vw;
+  text-align: right;
+}
+
+.loader-wrapper .line h1 {
+  font-size: var(--secondary-font-size);
+  font-weight: 400;
+}
+
+.line:nth-child(3) span {
+  font-size: var(--secondary-font-size);
+  color: transparent;
+  font-family: silkSerif-regular;
+  -webkit-text-stroke: 1px var(--primary-color);
+}
+
+/*?>>>>>>>>>>>>>>>>> loader */
