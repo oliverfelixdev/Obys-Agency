@@ -34,8 +34,4 @@ From Obys: Our agency is about people who love creating, designing and developin
 
 ![Showreel 3](./src/assets/images/showreel.png)
 
-## Live Visit
-
-Visit live [project](#).
-
 ## [Oliver Felix](https://www.instagram.com/oliverfelix1453?igsh=d25yYTh5a3poYnJ0)
